@@ -18,19 +18,8 @@ You can add "-d" to run in background
      docker-compose up -d
 ```
 
-if you hit the /api path actually domain is forwarding to url https://yourdomain.com directly, without '/api' path
+if you hit the /gist path actually domain is forwarding to url directly ( https://yourdomain.com ), without /gist path
 
-example :
-
-hit
-```
-     localhost:8000/api/login
-```
-
-result :
-```
-     https://yourdomain.com/login
-```
 
 ## Reference
 
