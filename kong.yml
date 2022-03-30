@@ -7,16 +7,16 @@ services:
       - name: gists-route
         paths:
           - /gists
-  - name: pusdokkes-api
-    url: https://yourdomain.com
+  - name: gist-service-api
+    url: https://api.github.com/api
     routes:
-      - name: pusdokkes-api
+      - name: pusdokkes-route
         paths:
-          - /api
+          - /gists/api
 
 plugins:
   - name: rate-limiting
-    service: pusdokkes-api
+    service: pusdokkes-service
     config:
       minute: 5
       policy: local
