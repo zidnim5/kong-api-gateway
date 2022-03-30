@@ -10,13 +10,13 @@ services:
   - name: gist-service-api
     url: https://api.github.com/api
     routes:
-      - name: pusdokkes-route
+      - name: gist-service-route
         paths:
           - /gists/api
 
 plugins:
   - name: rate-limiting
-    service: pusdokkes-service
+    service: gist-service-api
     config:
       minute: 5
       policy: local
