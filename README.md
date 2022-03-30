@@ -1,1 +1,0 @@
-# kong-api-gateway
